@@ -1,6 +1,6 @@
 # Factom Harmony Connect Node Client Sample App
 
-This is a sample application showcasing connectivity to the Factom Harmony Connect Node.js Client Library which can be found [here](https://www.google.com "Factom Harmony Connect Node.js Client Library").
+This is a sample application showcasing connectivity to the Factom Harmony Connect Node.js Client Library which can be found [here](https://github.com/FactomProject/factom-harmony-connect-node-client "Factom Harmony Connect Node.js Client Library").
 
 ## Getting Started
 
