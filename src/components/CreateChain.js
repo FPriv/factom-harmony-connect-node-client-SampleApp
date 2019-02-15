@@ -22,31 +22,39 @@ class CreateChain extends React.Component {
 
   render() {
     return (
-        <div>
-          <h4>Create Chain</h4>
+        <div className="col s6"><div className="card"><div className="card-content">
+          <span className="card-title">Create Chain</span>
           <form className="ui form" onSubmit={this.handleFormSubmit}>
-            <label>
-              Tags:
-              <input 
-                placeholder="Seperate by comma or space"
-                type="text" 
+            <div className="input-field">
+	      <label htmlFor="create-chain-tags">
+                Tags (separate by comma or space)
+              </label>
+	      <input 
+                id="create-chain-tags"
+	        type="text" 
                 value={this.state.tags}
                 onChange={(e) => this.setState({tags: e.target.value})} 
               />
-            </label>
-            <br/>
-            <label>
-              Initial Content:
+            </div>
+            <div className="input-field">
+              <label htmlFor="create-chain-content">
+                Initial Content
+	      </label>
               <input 
-                type="text" 
+                id="create-chain-content"
+	        type="text" 
                 value={this.state.initialText}
                 onChange={(e) => this.setState({initialText: e.target.value})} 
               />
-            </label>
-            <br/>
-            <input type="submit" value="Create Chain" />
+            </div>
+	    <button 
+	      className="btn-floating btn-large halfway-fab waves-effect waves-light"
+	      type="submit"
+	    >
+	      <i className="material-icons">add</i>
+	    </button>
           </form>
-        </div>
+        </div></div></div>
     )
   }
 

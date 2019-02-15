@@ -54,16 +54,23 @@ class App extends React.Component {
     return (
       <div>
         <h2>Harmony Connect GUI</h2>
-        <br/>
-        <CreateChain createChainCallback={this.createChainCallback}/>
-        <h5>Generated Chain IDs: </h5> 
-        <ul>{renderGeneratedIds}</ul>
-        <div className="ui divider"></div> <br/>
-        <PostToChain postEntryCallback={this.postEntryCallback}/>
-        <br/> <div className="ui divider"></div> <br/>
-        <SearchChainEntries searchChainCallback={this.searchChainCallback}/>
-        <h5>Searched Chain Entry Hashes: </h5>
-        <ul>{renderChainInfoExternalIds}</ul>
+        <div className="row">
+          <CreateChain createChainCallback={this.createChainCallback}/>
+          <div className="col s6">
+	    <h5>Generated Chain IDs: </h5> 
+            <ul>{renderGeneratedIds}</ul>
+	  </div>
+	</div>
+        <div className="row">
+          <PostToChain postEntryCallback={this.postEntryCallback}/>
+        </div>
+	<div className="row">
+          <SearchChainEntries searchChainCallback={this.searchChainCallback}/>
+          <div className="col s6">
+	    <h5>Found Entry Hashes: </h5>
+            <ul>{renderChainInfoExternalIds}</ul>
+	  </div>
+	</div>
       </div>
     );
   }

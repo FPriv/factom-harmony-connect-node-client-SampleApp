@@ -21,40 +21,50 @@ class PostToChain extends React.Component {
 
   render(){
     return (
-      <div>
-        <h4>Post to Chain by ID</h4>
+      <div className="col s6"><div className="card"><div className="card-content">
+        <span className="card-title">Post Entry to Chain by Chain ID</span>
         <form className="ui form" onSubmit={this.handleFormSubmit}>
-            <label>
-              Chain ID:
-              <input 
-                type="text" 
-                value={this.state.chain_id}
-                onChange={(e) => this.setState({chain_id: e.target.value})} 
-              />
-            </label>
-            <br/>
-            <label>
-              Tags:
-              <input 
-                placeholder="Seperate by comma or space"
-                type="text" 
-                value={this.state.tags}
-                onChange={(e) => this.setState({tags: e.target.value})} 
-              />
-            </label>
-            <br/>
-            <label>
-              Content:
-              <input 
-                type="text" 
-                value={this.state.content}
-                onChange={(e) => this.setState({content: e.target.value})} 
-              />
-            </label>
-            <br/>
-            <input type="submit" value="Create Entry" />
-          </form>
-      </div>
+          <div className="input-field">
+	    <label htmlFor="create-entry-chain-id">
+              Chain ID
+	    </label>
+            <input
+	      id="create-entry-chain-id"
+              type="text" 
+              value={this.state.chain_id}
+              onChange={(e) => this.setState({chain_id: e.target.value})} 
+            />
+	  </div>
+          <div className="input-field">
+            <label htmlFor="create-entry-tags">
+              Tags (separate by comma or space)
+	    </label>
+            <input 
+              id="create-entry-tags"
+              type="text" 
+              value={this.state.tags}
+              onChange={(e) => this.setState({tags: e.target.value})} 
+            />
+	  </div>
+	  <div className="input-field">
+            <label htmlFor="create-entry-content">
+              Content
+	    </label>
+            <input 
+              id="create-entry-content"
+	      type="text" 
+              value={this.state.content}
+              onChange={(e) => this.setState({content: e.target.value})} 
+            />
+          </div>
+          <button
+            className="btn-floating btn-large halfway-fab waves-effect waves-light"
+            type="submit"
+          >
+            <i className="material-icons">add</i>
+          </button>
+        </form>
+      </div></div></div>
     );
   }
 

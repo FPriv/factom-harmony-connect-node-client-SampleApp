@@ -28,21 +28,28 @@ class SearchChain extends React.Component {
 
   render() {
     return (
-        <div>
-          <h4>Search Chain Entries by Chain ID</h4>
+        <div className="col s6"><div className="card"><div className="card-content">
+          <span className="card-title">Retrieve Entries by Chain ID</span>
           <form className="ui form" onSubmit={this.handleFormSubmit}>
-            <label>
-              Chain ID:
-              <input 
-                type="text" 
+            <div className="input-field">
+	      <label htmlFor="get-entries-chain-id">
+                Chain ID
+              </label>
+	      <input 
+                id="get-entries-chain-id"
+	        type="text" 
                 value={this.state.chainId}
                 onChange={(e) => this.setState({chainId: e.target.value})} 
               />
-            </label>
-            <br/>
-            <input type="submit" value="Search Chain" />
+            </div>
+	    <button
+	      className="btn-floating btn-large halfway-fab waves-effect waves-light"
+	      type="submit"
+	    >
+	      <i className="material-icons">add</i>
+	    </button>
           </form>
-        </div>
+        </div></div></div>
     )
   }
 
