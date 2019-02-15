@@ -7,6 +7,7 @@ module.exports = {
     publicPath: '/',
     filename: 'bundle.js'
   },
+  mode: 'none',
   module: {
     rules: [
       {
