@@ -53,11 +53,10 @@ class App extends React.Component {
 
     return (
       <div>
-        <h2>Harmony Connect GUI</h2>
         <div className="row">
           <CreateChain createChainCallback={this.createChainCallback}/>
           <div className="col s6">
-	    <h5>Generated Chain IDs: </h5> 
+	    <h5>Created Chain IDs: </h5> 
             <ul>{renderGeneratedIds}</ul>
 	  </div>
 	</div>

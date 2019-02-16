@@ -31,10 +31,13 @@ class CreateChain extends React.Component {
               </label>
 	      <input 
                 id="create-chain-tags"
+	        className="validate"
 	        type="text" 
                 value={this.state.tags}
                 onChange={(e) => this.setState({tags: e.target.value})} 
-              />
+                required
+	      />
+	      <span class="helper-text" data-error="This field is required"></span>
             </div>
             <div className="input-field">
               <label htmlFor="create-chain-content">
@@ -42,10 +45,13 @@ class CreateChain extends React.Component {
 	      </label>
               <input 
                 id="create-chain-content"
+	        className="validate"
 	        type="text" 
                 value={this.state.initialText}
                 onChange={(e) => this.setState({initialText: e.target.value})} 
+	        required
               />
+	      <span class="helper-text" data-error="This field is required"></span>
             </div>
 	    <button 
 	      className="btn-floating btn-large halfway-fab waves-effect waves-light"

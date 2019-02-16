@@ -30,10 +30,13 @@ class PostToChain extends React.Component {
 	    </label>
             <input
 	      id="create-entry-chain-id"
+	      className="validate"
               type="text" 
               value={this.state.chain_id}
               onChange={(e) => this.setState({chain_id: e.target.value})} 
-            />
+              required
+	    />
+	    <span class="helper-text" data-error="This field is required"></span>
 	  </div>
           <div className="input-field">
             <label htmlFor="create-entry-tags">
@@ -41,10 +44,13 @@ class PostToChain extends React.Component {
 	    </label>
             <input 
               id="create-entry-tags"
+	      className="validate"
               type="text" 
               value={this.state.tags}
               onChange={(e) => this.setState({tags: e.target.value})} 
-            />
+              required
+	    />
+	    <span class="helper-text" data-error="This field is required"></span>
 	  </div>
 	  <div className="input-field">
             <label htmlFor="create-entry-content">
@@ -52,10 +58,13 @@ class PostToChain extends React.Component {
 	    </label>
             <input 
               id="create-entry-content"
+	      className="validate"
 	      type="text" 
               value={this.state.content}
               onChange={(e) => this.setState({content: e.target.value})} 
+	      required
             />
+	    <span class="helper-text" data-error="This field is required"></span>
           </div>
           <button
             className="btn-floating btn-large halfway-fab waves-effect waves-light"

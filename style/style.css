@@ -1,0 +1,18 @@
+html{
+	height: 100%;
+	background: #335ba6;
+	color: #9e9fa1;
+}
+.nav-wrapper {
+	width: 70%;
+	margin: 0px auto;
+}
+
+.brand-logo img{
+	width: 250px;
+}
+
+.page-title {
+	text-align: center;
+	font-size: large;
+}

@@ -37,10 +37,13 @@ class SearchChain extends React.Component {
               </label>
 	      <input 
                 id="get-entries-chain-id"
+	        className="validate"
 	        type="text" 
                 value={this.state.chainId}
                 onChange={(e) => this.setState({chainId: e.target.value})} 
+	        required
               />
+	      <span class="helper-text" data-error="This field is required"></span>
             </div>
 	    <button
 	      className="btn-floating btn-large halfway-fab waves-effect waves-light"
