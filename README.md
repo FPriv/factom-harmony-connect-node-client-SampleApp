@@ -2,6 +2,9 @@
 
 This is a sample application showcasing connectivity to the Factom Harmony Connect Node.js Client Library which can be found [here](https://github.com/FactomProject/factom-harmony-connect-node-client "Factom Harmony Connect Node.js Client Library").
 
+![sample app screenshot](sample_app_screenshot.png)
+
+
 ## Getting Started
 
 ```bash
@@ -10,7 +13,8 @@ This is a sample application showcasing connectivity to the Factom Harmony Conne
 > npm install
 ```
 
-- Sign up for an account at [account.factom.com](https://account.factom.com/login) in order to create an Application ID and Application Key.
+- Sign up for a free account at [account.factom.com](https://account.factom.com/login) and create an application on the Shared Sandbox - FREE plan. 
+- Grab your Application ID and an Application Key.
 - Create a file named .env in the root folder of the project and add the following two lines, your .env file should look like the example below.
 
 ```
