@@ -22,7 +22,7 @@ class PostToChain extends React.Component {
   render(){
     return (
       <div className="col s6"><div className="card"><div className="card-content">
-        <span className="card-title">Post Entry to Chain by Chain ID</span>
+        <span className="card-title">Create Entry in Chain</span>
         <form className="ui form" onSubmit={this.handleFormSubmit}>
           <div className="input-field">
 	    <label htmlFor="create-entry-chain-id">
