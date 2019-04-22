@@ -23,7 +23,7 @@
   "dependencies": {
     "babel-preset-stage-1": "^6.1.18",
     "dotenv-webpack": "^1.7.0",
-    "harmony-connect-client": "^1.0.0",
+    "harmony-connect-client": "^1.0.8",
     "imports-loader": "^0.8.0",
     "lodash": "^4.17.11",
     "nodejs-base64": "^1.0.3",
