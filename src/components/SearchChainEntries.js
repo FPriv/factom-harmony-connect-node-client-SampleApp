@@ -49,7 +49,7 @@ class SearchChain extends React.Component {
 	      className="btn-floating btn-large halfway-fab waves-effect waves-light"
 	      type="submit"
 	    >
-	      <i className="material-icons">add</i>
+	      <i className="material-icons">search</i>
 	    </button>
           </form>
         </div></div></div>
