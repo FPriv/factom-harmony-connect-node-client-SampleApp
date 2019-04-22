@@ -20,7 +20,7 @@ class App extends React.Component {
     } else {
       let joined = this.state.createdChains.concat(data.chain_id);
       this.setState({ createdChains: joined })
-      this.props.alert.show('Chain Created')
+      this.props.alert.show('Chain created')
     }
   };
 
@@ -28,7 +28,7 @@ class App extends React.Component {
     this.setState({
       searchedChainEntries: data.data,
     });
-    this.props.alert.show(`${data.data.length} Chain Entries Found`)
+    this.props.alert.show(`${data.data.length} entries found`)
     window.scrollTo(0,document.body.scrollHeight);
   }
 
@@ -36,7 +36,7 @@ class App extends React.Component {
     if (error) {
       console.error(error);
     } else {
-      this.props.alert.show('Entry Posted')
+      this.props.alert.show('Entry created')
     }
   };
 
