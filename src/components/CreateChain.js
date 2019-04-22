@@ -41,7 +41,7 @@ class CreateChain extends React.Component {
             </div>
             <div className="input-field">
               <label htmlFor="create-chain-content">
-                Initial Content
+                Content
 	      </label>
               <input 
                 id="create-chain-content"
