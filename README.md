@@ -22,7 +22,7 @@ REACT_APP_HARMONY_APPLICATION_ID=
 REACT_APP_HARMONY_APPLICATION_KEY=
 ```
 
-- Add your newly created crendtials to the .env file found in the root directory of the project. NO quotation marks are needed like in the example below.
+- Add your newly created credentials to the .env file found in the root directory of the project. NO quotation marks are needed like in the example below.
 
 ```
 // The id and key below are examples and invalid
