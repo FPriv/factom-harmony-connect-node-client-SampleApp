@@ -37,7 +37,7 @@ class CreateChain extends React.Component {
                 onChange={(e) => this.setState({tags: e.target.value})} 
                 required
 	      />
-	      <span class="helper-text" data-error="This field is required"></span>
+	      <span className="helper-text" data-error="This field is required"></span>
             </div>
             <div className="input-field">
               <label htmlFor="create-chain-content">
@@ -51,7 +51,7 @@ class CreateChain extends React.Component {
                 onChange={(e) => this.setState({initialText: e.target.value})} 
 	        required
               />
-	      <span class="helper-text" data-error="This field is required"></span>
+	      <span className="helper-text" data-error="This field is required"></span>
             </div>
 	    <button 
 	      className="btn-floating btn-large halfway-fab waves-effect waves-light"
