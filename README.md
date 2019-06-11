@@ -13,9 +13,9 @@ This is a sample application showcasing connectivity to the Factom Harmony Conne
 > npm install
 ```
 
-- Sign up for a free account at [account.factom.com](https://account.factom.com/login) and create an application on the Shared Sandbox - FREE plan. 
+- Sign up for a free account at [account.factom.com](https://account.factom.com/login) and create an application on the Shared Sandbox - FREE plan.
 - Grab your Application ID and an Application Key.
-- Create a file named .env in the root folder of the project and add the following two lines, your .env file should look like the example below.
+- Create a file named .env in the root folder of the project and add the following two lines, your .env file should look like the example below. An example template file has been included in the root folder of the project named .env.example.
 
 ```
 REACT_APP_HARMONY_APPLICATION_ID=

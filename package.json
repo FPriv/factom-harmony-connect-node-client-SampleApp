@@ -34,6 +34,7 @@
     "react-dom": "^16.8.1",
     "react-redux": "5.0.7",
     "react-transition-group": "^2.5.3",
+    "redux": "^4.0.1",
     "webpack": "^4.29.4"
   }
 }
