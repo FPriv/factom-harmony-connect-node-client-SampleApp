@@ -1,5 +1,7 @@
 # Factom Harmony Connect Node Client Sample App
 
+**_WARNING:_** This sample application has been deprecated. Please use [factom-harmony-connect-js-sdk](https://github.com/FactomProject/factom-harmony-connect-js-sdk)
+
 This is a sample application showcasing connectivity to the Factom Harmony Connect Node.js Client Library which can be found [here](https://github.com/FactomProject/factom-harmony-connect-node-client "Factom Harmony Connect Node.js Client Library").
 
 ![sample app screenshot](sample_app_screenshot.png)
